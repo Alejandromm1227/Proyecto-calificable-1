@@ -1,33 +1,17 @@
-h1 {
-    border: 15px black ;
-    border-style: double;
-    padding-left: 300px;
-    background-color: rgb(90, 184, 252);
-    color: rgb(22, 122, 228);
-}
+
 .foto {
-    margin-left: 480px;
     border: black 1px;
     border-radius: 70%;
     object-fit: contain;
+    padding-top: 5px;
 }
-span, li {
+ p {
         font-family: "Agbalumo", system-ui;
         font-weight: 400;
-        font-style: normal;      
+        font-style: normal;   
+        font-size: large;   
 }
-.subtitulos {
-    border: 2px solid black;
-    padding: 10px;
-    padding-left: 510px;
-    background-color: rgb(90, 184, 252);
-    color: rgb(22, 122, 228);
-}
-body{
-    background-image: radial-gradient(white, blue);
-}
-.titulo3nivel {
-    border: 1px solid black;
-    padding: 5px;
-    margin: 10px;
+h3 {
+    font-size: xx-large black ;
+    text-align: center;
 }

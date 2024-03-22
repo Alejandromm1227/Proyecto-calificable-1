@@ -3,17 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Proyecto 1</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title> Proyecto 1</title>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Reenie+Beanie&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+    <link rel="stylesheet" href="style.css">
+
     <style>
-      *,
-      *::before, 
-        **::after{
+      * {
         box-sizing: border-box;
+      }
+      body {
+        width: 1024px;
+        height: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        background-image: radial-gradient(aqua, rgb(9, 149, 21));
+        display: flex;
+        flex-wrap: wrap;
+      }
+      header {
+        height: 88px;
+        width: 1024px;
+        align-items: center;
+        font-size: 50px;
+      }
+      main,
+      aside {
+        height: 900px;
+      }
+      main {
+        width: 800px;
+      }
+      aside {
+        width: 220px;
+        font-size: x-small;
+      }
+      footer {
+        height: 32px;
+        width: 1024px;
+        align-items: center;
+      }
+      header,
+      main,
+      aside,
+      footer {
+        background-image: radial-gradient(white aquamarine);
+        color: black;
+        border: 2px solid;
+        display: flex;
+        justify-content: center;
       }
         .material-symbols-outlined {
           font-variation-settings:
@@ -36,89 +77,87 @@
         }
         @media screen and (min-width: 1024px) {
           body { 
-            background-image: radial-gradient(white, blue);
+            background-image: linear-gradient(white aquamarine);
             font-size: 26px;
           }
         }
-        iframe {
-          margin-left: 200px;
+        img {
+          float: left;
+        }      
+        .caja {
+          border: 0.5px ;  
+          text-align: center;
+          font-size: large;
         }
+        .caja2 {
+          padding-left: 5px;
+          font-size: large;
+          text-align: center;
+        }
+        .caja3 {
+           border: 2px ;
+           font-size: small;
+           text-align: left;
+}
     </style>
 </head>
 <body>
-    <header><H1> Yeison Alejandro Mendez</H1>
-    <img class="foto" src="Foto de presentacion.jpg" width="200" height="175" alt="Foto de Presentacion">
-    </header>
-    <nav></nav>
-    <main>
-      <section>
-        <h2 class="subtitulos"> Trabajo </h2>
-      </section>
-      <section>
-        <h2 class="subtitulos"> Hobbies </h2>
-        <li> Futbol </li>
-      </section>
-      <section>
-        <li> Musica </li>
-        <span class="material-symbols-outlined">
-            music_note
-            </span>
-        <span> Les comparto mi cancion favorita del momento: Way Down We Go - Kaleo </span><br><audio src="Way Down We Go - Kaleo.mp3" controls> </audio><br><br>
-        <span> Y un gran video </span> <br><br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/RE0p5r29Uts?si=tja0EHxeE25gB-IX" title="YouTube video player"
+    <header> Yeison Alejandro Mendez </header>
+    <main><div><div>
+        <img class="foto" src="Foto de presentacion.jpg" width="250" height="225" alt="Foto de Presentacion">
+      <p>Naci en bogota un 1 de junio, he vivido toda mi vida aca, vivo en la localidad de suba, vivo con mi abuelo y la familia de mi tio,
+           trabajo en capital salud como auxliar de cuentas medicas, siempre quise estudiar programacion, entre las cosas que hago o mis hobbies estan 
+           jugar futbol, escuchar musica, viajar me gusta mucho viajar, mis momentos de relajacion son en el parque simon bolivar ya que queda cerca a mi trabajo 
+           y es un lugar muy tranquilo para pasar un buen rato.  </p>
+      </div><br>
+        <li class="caja"> Musica 
+        <div class="material-symbols-outlined"> music_note</div>
+        <div> Les comparto mi cancion favorita del momento: <strong>Way Down We Go - Kaleo</strong> </div><br><audio src="Way Down We Go - Kaleo.mp3" controls> </audio><br><br>
+        <div> Y un gran video a cargo de <strong>Pure Negga</strong> un gran cantante español </div><br>
+        <iframe width="300" height="150" src="https://www.youtube.com/embed/RE0p5r29Uts?si=tja0EHxeE25gB-IX" title="YouTube video player"
           frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
-      </section>
-      <section>
-        <li> Lugar de descanso parque Simon Bolivar </li><br><br>
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="200" id="gmap_canvas" src=
+        </li>
+        <li class="caja"> Les comparto la ubicacion del lugar de descanso parque Simon Bolivar <br><br>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="250" height="150" id="gmap_canvas" src=
         "https://maps.google.com/maps?q=simon+bolivar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" 
-        marginheight="0" marginwidth="0"></iframe><br><a href=
-        "https://timenowin.net/"></a></div></div>
-      </section>
-      <section>
-        <h2 class="subtitulos"> Receta Chanfaina </h2>
-    <span class="titulo3nivel"> Ingredientes </span>
-    <ul>
-        <li>1 libra hígado de res</li>
-        <li>1 libra pajarilla de res</li>
-        <li>1/2 libra corazón de res</li>
-        <li>1/4 libra maíz desgranado</li>
-        <li>1/2 libra zanahoria picada</li>
-        <li>1/2 libra arveja</li>
-        <li>1 pimentón grande</li>
-        <li>1 tallo cebolla puerro</li>
-        <li>1/2 libra papa negra</li>
-        <li>1/2 libra papa amarilla</li>
-        <li>125 gr fideo cabello de ángel</li>
-        <li>1 cubo caldo de carne</li>
-        <li>Pasta de ajo para carnes</li>
-        <li>Rama apio</li>
-        <li>Finas hierbas en polvo</li>
-        <li>Color y comino</li>
-        <li>Sal</li>
-        <li>Aceite de oliva</li>
-        <li>Cilantro</li>
-    </ul>
-    <span class="titulo3nivel" > Pasos </span>
-    <ol>
-        <li>En una olla a presión agregar las carnes con suficiente agua que la cubra junto con el maíz desgranado y pasta de ajo</li>
-        <li>Añadir una rama de apio, sal y el cubo de caldo de res, revolver, cerrar y poner a fuego alto</li>
-        <li>Aparte en un sartén se prepara un hogao/guiso con el pimentón, la cebolla, 
-            finas hierbas, comino, color, sal, aceite de oliva y se le agrega un poquito
-            del agua de la carne... Cocinar hasta que la cebolla quede transparente, reservar.</li>
-        <li>Después de aprox 30 minutos se agregan la zanahoria y la arveja, volver a tapar por aprox 15 minutos más</li>    
-        <li>Se agregan los dos tipos de papá y se dejan cocinar tapada la olla por 10 minutos más, 
-            luego se le agregan los fideos y se deja cocinar por otros 10 minutos más pero ya sin tapar la olla.</li>
-        <li>Agregar suficiente cilantro, dejar reposar y servir... Yo lo serví con arroz blanco y yuca cocida</li>
-    </ol>
-    <h4> Informacion sacada de : </h4>
-    <blockquote>
-      <a href="https://cookpad.com/co/recetas/16283871-chanfaina" target="_blank" rel="noopener noreferrer"> Receta chanfaina Cookpad </a>
-    </blockquote>
-      </section>
+        marginheight="0" marginwidth="0"></iframe><a href=
+        "https://timenowin.net/"></a>
+      </li>
+    </div>
     </main>
-    <aside></aside>
-    <footer></footer>
+    <aside><div><h2 class="caja"> Bizcocho casero de yogur </h2><br><br>
+      <span class="caja2"> Añadir yogur a la receta tradicional de un bizcocho no sólo hará que la preparación tenga variantes, 
+        sino que el resultado tendrá un sabor distinto, pero igual de sabroso.</p>
+      <span class="caja3"> <h3>Ingredientes </h3></span>
+        <ul class="caja3">
+          <li>125 gr. de yogur natural.</li>
+          <li>350 gr. de harina.</li>
+          <li>250 gr. de azúcar.</li>
+          <li>120 ml. de aceite.</li>
+          <li>3 huevos.</li>
+          <li>10 gr. de levadura en polvo.</li>
+        </ul>
+      <span class="caja3"> <h3> Pasos </h3></span>
+      <ol class="caja3">
+        <li>En un recipiente de regular tamaño bate el azúcar con los huevos, puedes hacerlo a mano o utilizar una batidora eléctrica,
+        <li>el único requerimiento es hacerlo hasta que la mezcla crezca hasta casi el doble.</li>
+        <li>Agrega el aceite y luego el yogur.</li>
+        <li>Mezcla hasta que todos los ingredientes se integren.</li>
+        <li>Es el turno de los ingredientes secos, tamiza la harina junto con la levadura y añade poco a poco para evitar la formación de grumos.</li>
+        <li>Vierte el preparado en un molde engrasado.</li>
+        <li>Lleva al horno utilizando una temperatura de 180°C. durante 40 minutos aproximadamente.</li>
+        <li>Deja enfriar y retira del molde. Puedes servirlo como está o bien decorarlo como tu prefieras.</li>
+      </ol>
+      <div class="caja">Informacion sacada de :</div>
+    <blockquote>
+      <a href="https://recetascortas.com/dulces/bizcocho-casero-de-yogur#more-623" target="_blank" rel="noopener noreferrer"> Recetas cortas </a>
+    </blockquote>
+  </div>
+    </aside>
+    <footer class="caja2"> 
+      por ultimo les comprato el link de GitHub por si quieren visitarlo!! muchas gracias!
+      <a href="git@github.com:Alejandromm1227/Proyecto-calificable-1.git" target="_blank" rel="noopener noreferrer"> GitHub </a>
+    </footer>
 </body>
 </html>
