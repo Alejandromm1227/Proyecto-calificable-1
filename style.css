@@ -1,13 +1,15 @@
 h1 {
     border: 15px black ;
     border-style: double;
-    padding-left: 400px;
+    padding-left: 300px;
     background-color: rgb(90, 184, 252);
     color: rgb(22, 122, 228);
 }
 .foto {
     margin-left: 480px;
     border: black 1px;
+    border-radius: 70%;
+    object-fit: contain;
 }
 span, li {
         font-family: "Agbalumo", system-ui;
@@ -17,12 +19,12 @@ span, li {
 .subtitulos {
     border: 2px solid black;
     padding: 10px;
-    padding-left: 530px;
+    padding-left: 510px;
     background-color: rgb(90, 184, 252);
     color: rgb(22, 122, 228);
 }
 body{
-    background-color: rgb(8, 169, 227);
+    background-image: radial-gradient(white, blue);
 }
 .titulo3nivel {
     border: 1px solid black;
